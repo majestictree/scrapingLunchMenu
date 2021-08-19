@@ -55,7 +55,7 @@ images_url_list = scrapingdataToList(images_url, 'src')
 #値段が550円よりも高いメニューを除外
 price = 0
 price_list_tmp = copy.copy(price_list)
-for i in reversed(range(0, 80)):
+for i in reversed(range(0, 90)):
     price = int(price_list_tmp[i].strip(chr(165)).replace(',',''))
     if (price > 550):
         name_list.pop(i)
